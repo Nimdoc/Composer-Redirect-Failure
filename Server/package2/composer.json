@@ -1,0 +1,13 @@
+{
+    "name": "nimdok/package2",
+    "description": "Test package 2.",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Busby",
+            "email": "tombusbytmb@gmail.com"
+        }
+    ],
+    "require": {}
+}

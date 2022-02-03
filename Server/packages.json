@@ -1,0 +1,10 @@
+{
+    "packages": {
+        "nimdok/package1": {
+            "1.0.0": { @composer.json }
+        },
+        "nimdok/package2": {
+            "1.0.0": { @composer.json }
+        }
+    }
+}

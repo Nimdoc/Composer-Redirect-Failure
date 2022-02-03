@@ -1,0 +1,48 @@
+{
+    "name": "nimdok/redirect-demo",
+    "description": "This is a demo of how redirects can break composer if there's a package has an timed download link",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nimdok\\RedirectDemo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tom Busby",
+            "email": "tombusbytmb@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "nimdok/package1",
+                "version": "1.0.0",
+                "dist": {
+                    "url": "http://localhost:8123/package1",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "nimdok/package2",
+                "version": "1.0.0",
+                "dist": {
+                    "url": "http://localhost:8123/package2",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "require": {
+        "nimdok/package1": "1.0.0",
+        "nimdok/package2": "1.0.0"
+    },
+    "config": {
+        "secure-http": false
+    }
+}
